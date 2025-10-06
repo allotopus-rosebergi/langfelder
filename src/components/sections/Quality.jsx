@@ -1,4 +1,3 @@
-import {styles} from "../../styles.js";
 import { Highlighter } from "../highlighter.jsx";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -46,12 +45,12 @@ function Quality() {
 
     return (
         <section id="qualitaet">
-            <div  className={styles.margin} >
-                <div className="flex flex-col-reverse sm:flex-row gap-8 mt-8 sm_mt-0 sm:gap-16">
+            <div className={`lg:mx-16 lg:my-16 mx-0 my-0`}>
+                <div className="flex flex-col-reverse lg:flex-row gap-16 mt-16">
 
-                    <img src={KartoffelImg} alt="Unsere Langfelder Bio Erdäpfel, frisch vom Hof" className="w-full sm:w-1/2 object-cover" loading="lazy"/>
+                    <img src={KartoffelImg} alt="Unsere Langfelder Bio Erdäpfel, frisch vom Hof" className="w-full lg:w-1/2 object-cover" loading="lazy"/>
 
-                    <div className="w-full sm:w-1/2 flex flex-col justify-center px-6">
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center px-6">
                         <h2 className="title2"> Was macht unsere Erdäpfel so besonders? </h2>
                         <p className="para2"> Unsere Erdäpfel wachsen im Waldviertel in Langfeld. Die Region ist bekannt für ihren
                             <Highlighter action="underline">

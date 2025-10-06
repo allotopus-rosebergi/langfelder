@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export const InteractiveHoverButton = React.forwardRef(
     ({ children, className = "", ...props }, ref) => {
         const baseClasses =
-            "group relative w-auto cursor-pointer overflow-hidden rounded-full border bg-background p-2 px-6 text-center font-semibold background-blur-xs backdrop-blur-xs  transition-transform transition-shadow duration-300 hover:scale-105 hover:rotate-2 drop-shadow-md hover:drop-shadow-2xl"
+            "group relative w-auto cursor-pointer overflow-hidden rounded-full border backdrop-blur-xs bg-background p-2 px-6 text-center font-semibold  transition-transform transition-shadow duration-300 hover:scale-105 hover:rotate-2 drop-shadow-md hover:drop-shadow-2xl"
 
         return (
             <button

@@ -49,18 +49,16 @@ function AboutUs() {
     }, []);
     return (
         <section id="ueber-uns">
-            <div  className={styles.margin} >
-                <div className="flex flex-col sm:flex-row gap-16">
+            <div  className="lg:mx-16 lg:my-16 mx-0 my-0" >
+                <div className="flex flex-col lg:flex-row gap-16">
+                    <img src={AboutUsImg} alt="Familie Semper" className=" w-full lg:w-1/2 object-cover" loading="lazy"/>
 
-                    <img src={AboutUsImg} alt="Familie Semper" className=" w-full sm:w-1/2 object-cover" loading="lazy"/>
-
-                    <div className="w-full sm:w-1/2 flex flex-col justify-center px-6">
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center px-6">
                         <p className="title cursive_highlight"> Willkommen! </p>
                         <h2 className="title"> Wir sind die Familie Semper</h2>
                         <p className="para"> … ehemals Lassl.
                             <Highlighter action="underline"> <span className="text-goldgelb font-bold">Schon seit 1992 </span></Highlighter>  dreht sich bei uns alles um Erdäpfel. Als Familienbetrieb arbeiten wir Seite an Seite und bringen Erfahrung und Begeisterung für die Landwirtschaft zusammen. </p>
                     </div>
-
                 </div>
             </div>
 

@@ -4,7 +4,7 @@ import {styles} from "../../styles.js";
 function Gallery() {
     return (
         <>
-            <div className={`${styles.marginY} w-full h-auto sm:h-dvh flex flex-col sm:flex-row`}>
+            <div className={`${styles.marginY} w-full h-auto sm:h-dvh flex flex-col sm:flex-row my-16`}>
                 <div className="w-full sm:w-1/2 h-full">
                     <div className="h-1/2">
                         <img src={gallery[0].img} alt={gallery[0].alt} className="w-full h-full object-cover" loading="lazy"/>

@@ -1,4 +1,3 @@
-import {styles} from "../../styles.js";
 import {useEffect} from "react";
 import {SplitText} from "gsap/SplitText";
 import {gsap} from "gsap";
@@ -60,12 +59,12 @@ function Contact (){
     return(
         <>
             <section id="kontakt">
-                <div  className={`${styles.margin} mt-8 sm:my-16`} >
-                    <div className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-16">
+                <div  className={`lg:mx-16 lg:my-16 mx-0 my-0 mt-8`} >
+                    <div className="flex flex-col-reverse lg:flex-row gap-16">
 
-                        <img src={StandlImg} alt="Verkaufsstand Langfelder Bio Erdäpfel" className="w-full sm:w-1/2 object-cover object-center" loading="lazy"/>
+                        <img src={StandlImg} alt="Verkaufsstand Langfelder Bio Erdäpfel" className="w-full lg:w-1/2 object-cover object-center" loading="lazy"/>
 
-                        <div className="w-full sm:w-1/2 flex flex-col justify-center px-6">
+                        <div className="w-full lg:w-1/2 flex flex-col justify-center px-6">
                             <h2 className="title3"> Wie kommen Sie zu unseren Erdäpfeln? </h2>
                             <p className="para3"> Unsere Erdäpfel bekommen Sie direkt bei uns am Hof in Langfeld.
                                 Im Verkaufsstand können Sie die Erdäpfel mittels Selbstbedienung kaufen. Geöffnet ist der Verkaufsstand von Montag bis Sonntag. Bei Frost sind die Erdäpfel im Haus erhältlich. Für größere Mengen bitten wir um Voranmeldung. </p>
