@@ -71,27 +71,40 @@ function Products() {
                 </div>
 
 
+
                 <div className={`w-full grid grid-cols-1 md:grid-cols-2 gap-y-32 sm:gap-y-48 mb-24 mt-32`}>
                     {potato_range.map((potato) => (
-                        <div className="w-full flex flex-col items-center relative potatoes" key={potato.id}>
-                            <p className="cursive_highlight absolute -top-12">{potato.special}</p>
-                            <h3>{potato.name}</h3>
-                            <p>{potato.characteristics}</p>
+                        <div className="relative w-full potatoes" key={potato.id}>
+                            <div className={`relative w-full flex flex-col items-center  ${potato.disabled ? "disabled opacity-45 pointer-events-none" : ""}`}>
+                                <p className="cursive_highlight absolute -top-12">{potato.special}</p>
+                                <h3>{potato.name}</h3>
+                                <p>{potato.characteristics}</p>
 
-                            <div className="relative w-5/6 sm:w-4/6 my-6 sm:mt-6 object-center">
-                                <DoorSvg className="w-2/3 opacity-65 m-auto" />
-                                <img
-                                    src={potato.img}
-                                    alt={potato.alt}
-                                    loading="lazy"
-                                    className="absolute inset-0 w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105 hover:rotate-2 hover:drop-shadow-xl"
-                                />
+                                <div className="relative w-5/6 sm:w-4/6 my-6 sm:mt-6 object-center">
+                                    <DoorSvg className="w-2/3 opacity-65 m-auto" />
+                                    <img
+                                        src={potato.img}
+                                        alt={potato.alt}
+                                        loading="lazy"
+                                        className={`absolute inset-0 w-full h-full object-contain object-center transition-transform duration-300 hover:scale-105 hover:rotate-2 hover:drop-shadow-xl`}
+                                    />
+                                </div>
+
+                                <p className="w-5/6 sm:w-2/5">{potato.description}</p>
                             </div>
 
-                            <p className="w-5/6 sm:w-2/5">{potato.description}</p>
+                            <div className={`${potato.disabled ? "absolute w-full h-full flex items-center justify-center top-0" : "hidden"}`}>
+                                <p className="w-full text-center text-tiefbraun sm:text-3xl text-2xl rubik-bold">
+                                    Derzeit leider <br/>
+                                    nicht verfügbar!
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
+
+
+
 
                 <div className="infoBox m-8 sm:m-16 p-4 sm:p-8 border-[1px] border-taubengrau rounded-lg flex flex-col sm:flex-row gap-4 sm:gap-16 items-center">
                     <div className="w-full sm:w-2/3">

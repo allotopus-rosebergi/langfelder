@@ -144,6 +144,7 @@ export const potato_range = [
     {
         id: '3',
         special: null,
+        disabled: true,
         name: 'Valdivia',
         alt: 'Valdivia Kartoffel',
         characteristics: 'festkochend und sehr speckig',

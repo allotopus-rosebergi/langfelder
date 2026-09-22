@@ -72,13 +72,13 @@ function Contact (){
                             <div className="info3 w-full flex flex-col justify-center pt-6 gap-6">
                                 <div>
                                     <p> Rufen Sie uns an oder schreiben Sie uns auf WhatsApp </p>
-                                    <p className="highlight text-lg"> 0664 7952710 </p>
-                                    <p className="highlight text-lg"> 0664 3200339 </p>
+                                    <a href="tel:+430664795271" className="highlight text-lg"> 0664 7952710 </a><br/>ç
+                                    <a href="tel:+30664 3200339" className="highlight text-lg"> 0664 3200339 </a>
                                 </div>
 
                                 <div>
                                     <p> Senden Sie uns eine E-Mail </p>
-                                    <p className="highlight text-lg"> daniela.semper1@gmx.at </p>
+                                    <a href="mailto:daniela.semper1@gmx.at" className="highlight text-lg"> daniela.semper1@gmx.at </a>
                                 </div>
 
                                 <div>
